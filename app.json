@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "React-FireBase_Example",
-    "slug": "React-FireBase_Example",
+    "name": "react-firebase-example",
+    "slug": "react-firebase-example",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "googleServicesFile": ".android/app/google-services.json",
+      "package": "com.sbigmacs.reactfirebaseexample"
     },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/perf",
+      "@react-native-firebase/crashlytics"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "da753108-0283-44a9-9961-98c7dbb049eb"
+      }
     }
   }
 }
